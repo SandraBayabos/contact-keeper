@@ -7,7 +7,7 @@ app.get("/", (req, res) =>
   res.json({ msg: "Welcome to the ContactKeeper API..." })
 );
 
-// Define Routes
+// Define Routes for use in contacts, auth and users
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/contacts", require("./routes/contacts"));
